@@ -5,16 +5,17 @@ import fs from "fs";
 
 puppeteer.use(StealthPlugin());
 
-
-
+const USERNAME = "";
+const PASSWORD = "";
+const SEARCH_KEYWORD = "";
 const URL = "https://www.instagram.com/accounts/onetap/?next=%2F";
 
 const main = async () => {
   const browser = await puppeteer.launch({ headless: false });
   const page = await browser.newPage();
   await page.goto(URL);
-  await login(page, "testerpup121", "test@121");
-  await search(page, "#girls");
+  await login(page, USERNAME, PASSWORD);
+  await search(page, SEARCH_KEYWORD);
   await getAllPosts(page);
 };
 
