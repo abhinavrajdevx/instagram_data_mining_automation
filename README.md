@@ -1,6 +1,80 @@
-# bot-to-fill-forms-puppeteer-extra-stealth
-# instagram_data_mining_automation
-# instagram_data_mining_automation
-# instagram_data_mining_automation
-# instagram_data_mining_automation
-# instagram_data_mining_automation
+# 📸 Instagram Data Mining Automation 🤖
+
+[![GitHub Repo stars](https://img.shields.io/github/stars/abhinavrajdevx/instagram_data_mining_automation?style=social)](https://github.com/abhinavrajdevx/instagram_data_mining_automation)
+[![GitHub issues](https://img.shields.io/github/issues/abhinavrajdevx/instagram_data_mining_automation)](https://github.com/abhinavrajdevx/instagram_data_mining_automation/issues)
+[![GitHub license](https://img.shields.io/github/license/abhinavrajdevx/instagram_data_mining_automation)](https://github.com/abhinavrajdevx/instagram_data_mining_automation/blob/main/LICENSE)
+
+---
+
+## 🚀 Overview
+
+This project automates the process of mining data from Instagram using Puppeteer and TypeScript. It logs in, searches for a specified keyword, and extracts post captions. 🕵️‍♂️✨
+
+![Instagram Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png)
+
+## 🛠️ Features
+
+-   **Automated Login:** Logs into Instagram with provided credentials. 🔑
+-   **Keyword Search:** Searches for specific keywords on Instagram. 🔍
+-   **Post Data Extraction:** Extracts captions from Instagram posts. 📝
+-   **Puppeteer Stealth:** Uses `puppeteer-extra-plugin-stealth` to avoid detection. 🕶️
+-   **Randomized Delays:** Simulates human behavior with randomized delays. ⏳
+-   **TypeScript Powered:** Built with TypeScript for type safety and maintainability. 💻
+
+## 📦 Installation
+
+1.  **Clone the repository:**
+
+    ```bash
+    git clone [https://github.com/abhinavrajdevx/instagram_data_mining_automation.git](https://www.google.com/search?q=https://github.com/abhinavrajdevx/instagram_data_mining_automation.git)
+    cd instagram_data_mining_automation
+    ```
+
+2.  **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+3.  **Configure environment variables:**
+
+    Open `index.ts` and set the following variables:
+
+    ```typescript
+    const USERNAME = "your_username";
+    const PASSWORD = "your_password";
+    const SEARCH_KEYWORD = "search_keyword";
+    ```
+
+4.  **Build and run the script:**
+
+    ```bash
+    npm run dev
+    ```
+
+## 📜 Code Breakdown
+
+### `index.ts`
+
+```typescript
+import { Page } from "puppeteer";
+import puppeteer from "puppeteer-extra";
+import StealthPlugin from "puppeteer-extra-plugin-stealth";
+import fs from "fs";
+
+puppeteer.use(StealthPlugin());
+
+// ... (Constants and functions)
+
+const main = async () => {
+  const browser = await puppeteer.launch({ headless: false });
+  const page = await browser.newPage();
+  await page.goto(URL);
+  await login(page, USERNAME, PASSWORD);
+  await search(page, SEARCH_KEYWORD);
+  await getAllPosts(page);
+};
+
+// ... (login, search, getAllPosts, etc.)
+
+main();
