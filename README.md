@@ -82,18 +82,18 @@ const main = async () => {
 main();
 ```
 
--   **main(): The main function that initializes Puppeteer, navigates to Instagram, and calls the login, search, and data extraction functions.
--   **login(): Logs into Instagram using the provided username and password.
--   **search(): Searches for the specified keyword on Instagram.
--   **getAllPosts(): Extracts captions from each post found during the search.
--   **clickButtonCustom(): A utility function to click buttons using custom selectors.
--   **generaterandomNumber() and delay(): Utility functions to simulate human behavior.
+-   **main():** The main function that initializes Puppeteer, navigates to Instagram, and calls the login, search, and data extraction functions.
+-   **login():** Logs into Instagram using the provided username and password.
+-   **search():** Searches for the specified keyword on Instagram.
+-   **getAllPosts():** Extracts captions from each post found during the search.
+-   **clickButtonCustom():** A utility function to click buttons using custom selectors.
+-   **generaterandomNumber() and delay():** Utility functions to simulate human behavior.
 -   Lists the project dependencies and the dev script to build and run the TypeScript code.
 
 ### ⚠️ Disclaimer
--   **Use this script responsibly and ethically. Respect Instagram's terms of service and avoid excessive scraping.
--   **This script might break if Instagram changes its website structure.
--   **Always be mindful of privacy and data protection.
+-   Use this script responsibly and ethically. Respect Instagram's terms of service and avoid excessive scraping.
+-   This script might break if Instagram changes its website structure.
+-   Always be mindful of privacy and data protection.
 
 ### 🤝 Contributing
--   **Contributions are welcome! Feel free to submit pull requests or open issues. 🐛✨
+-   Contributions are welcome! Feel free to submit pull requests or open issues. 🐛✨
