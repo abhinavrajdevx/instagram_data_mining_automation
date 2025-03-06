@@ -90,10 +90,10 @@ main();
 -   **generaterandomNumber() and delay(): Utility functions to simulate human behavior.
 -   Lists the project dependencies and the dev script to build and run the TypeScript code.
 
-###⚠️ Disclaimer
+### ⚠️ Disclaimer
 -   **Use this script responsibly and ethically. Respect Instagram's terms of service and avoid excessive scraping.
 -   **This script might break if Instagram changes its website structure.
 -   **Always be mindful of privacy and data protection.
 
-###🤝 Contributing
+### 🤝 Contributing
 -   **Contributions are welcome! Feel free to submit pull requests or open issues. 🐛✨
