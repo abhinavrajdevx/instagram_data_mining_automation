@@ -10,7 +10,7 @@
 
 This project automates the process of mining data from Instagram using Puppeteer and TypeScript. It logs in, searches for a specified keyword, and extracts post captions. 🕵️‍♂️✨
 
-![Instagram Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png)
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" width="200">
 
 ## 🛠️ Features
 
